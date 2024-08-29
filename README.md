@@ -1,7 +1,23 @@
 # Retrieval-Augmented Generation (RAG) Application
 
-## Description
-This project demonstrates a Retrieval-Augmented Generation (RAG) application using OpenAI's GPT-3.5 Turbo model. The application allows users to query text data from various file formats (TXT, DOCX, PDF) and generates relevant responses based on the content retrieved from the files. The project utilizes OpenAI's text embeddings to vectorize the text and calculate the similarity between the user's query and the content of the files. If relevant information is found, the model generates a response based on the retrieved text.
+## Introduction
+
+This RAG Application is a Python-based tool that combines document retrieval and text generation to answer questions based on the content of various document types (PDF, DOCX, TXT). It uses OpenAI's API for text embedding and generation, providing context-aware responses to user queries.
+
+## Features
+
+Support for multiple document types (PDF, DOCX, TXT)
+Text preprocessing and chunking for efficient processing
+Semantic search using OpenAI's text embeddings
+Context-aware response generation using GPT-3.5-turbo
+Easy-to-use interface for asking questions about document content
+
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+Python 3.7 or higher
+An OpenAI API key
+
 
 ## Installation
 To run this project, you need to install the required libraries. Use the following command:
@@ -47,10 +63,11 @@ for prompt in prompts:
     print(response)
 ```
 
-## Notes
-Ensure that your OpenAI API key is valid and active.
-The similarity threshold is set to 0.5. Adjust it if necessary to refine the relevance of retrieved information.
-This application is designed to work with small to medium-sized text documents. Performance on large files may vary.
+## Customization
+
+Adjust the chunk_size in the chunk_text function to change how the document is split.
+Modify the similarity_threshold in the rag_application function to control how closely the context must match the query.
+Change the max_tokens and temperature parameters in the generate_response function to adjust the length and creativity of the generated responses.
 
 ## Limitations
 
