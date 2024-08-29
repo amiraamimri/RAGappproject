@@ -6,17 +6,17 @@ This RAG Application is a Python-based tool that combines document retrieval and
 
 ## Features
 
-### Support for multiple document types (PDF, DOCX, TXT)
-### Text preprocessing and chunking for efficient processing
-### Semantic search using OpenAI's text embeddings
-### Context-aware response generation using GPT-3.5-turbo
-### Easy-to-use interface for asking questions about document content
+- Support for multiple document types (PDF, DOCX, TXT)
+- Text preprocessing and chunking for efficient processing
+- Semantic search using OpenAI's text embeddings
+- Context-aware response generation using GPT-3.5-turbo
+- Easy-to-use interface for asking questions about document content
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
 
-### Python 3.7 or higher
-### An OpenAI API key
+- Python 3.7 or higher
+- An OpenAI API key
 
 
 ## Installation
@@ -65,9 +65,9 @@ for prompt in prompts:
 
 ## Customization
 
-### Adjust the chunk_size in the chunk_text function to change how the document is split.
-### Modify the similarity_threshold in the rag_application function to control how closely the context must match the query.
-### Change the max_tokens and temperature parameters in the generate_response function to adjust the length and creativity of the generated responses.
+- Adjust the chunk_size in the chunk_text function to change how the document is split.
+- Modify the similarity_threshold in the rag_application function to control how closely the context must match the query.
+- Change the max_tokens and temperature parameters in the generate_response function to adjust the length and creativity of the generated responses.
 
 ## Limitations
 
